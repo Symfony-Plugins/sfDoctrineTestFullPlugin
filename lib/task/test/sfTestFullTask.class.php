@@ -63,7 +63,7 @@ EOF;
       // other tests
       array($h->base_dir.'/other')
     )));
-//    $h->run();
+    $h->run();
 
     # Test Doctrine
     chdir(realpath(dirname(__FILE__).'/../../../data/doctrine/tests/'));
@@ -78,7 +78,7 @@ EOF;
     $finder = sfFinder::type('file')->follow_link()->name('*Test.php');
     $h->register($finder->in($h->base_dir));
 
-//    $h->run();
+    $h->run();
   }
 }
 
